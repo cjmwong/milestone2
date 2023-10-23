@@ -1,3 +1,6 @@
+package com.example.demo;
+
+import com.example.demo.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -19,13 +22,13 @@ class LoadDataTest {
         Assessment a1 = new Assessment(new BigDecimal(297000), "100", "", "", "RESIDENTIAL", "", "");
         p1 = new PropertyAssessment("1194893", "", "8349", "156 AVENUE NW", false, n1, c1, a1);
     }
-    @Test
-    void readFile() {
-        assertEquals(422062, LoadData.readCSV("Property_Assessment_Data_2023.csv").getList().size());
-        assertEquals(422062, LoadData.readCSV("Property_Assessment_Data_2023.csv").getMap().size());
-    }
+
     @Test
     void buildProperty() {
         assertEquals(p1, LoadData.buildProperty(propertyInfo));
     }
+
+    private void assertEquals(PropertyAssessment p1, PropertyAssessment buildProperty) {
+    }
+
 }

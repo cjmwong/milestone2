@@ -1,3 +1,9 @@
+package com.example.demo;
+
+import com.example.demo.Assessment;
+import com.example.demo.Coordinates;
+import com.example.demo.Neighborhood;
+import com.example.demo.PropertyAssessment;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
